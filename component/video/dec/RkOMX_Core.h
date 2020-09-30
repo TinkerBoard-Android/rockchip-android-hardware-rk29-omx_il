@@ -39,10 +39,11 @@ static const omx_core_cb_type dec_core[] = {
         "video_decoder.flv1"
     },
 
-    {
-        "OMX.rk.video_decoder.m2v",
-        "video_decoder.mpeg2"
-    },
+    /*    {
+            "OMX.rk.video_decoder.m2v",
+            "video_decoder.mpeg2"
+        },
+    */
 #ifndef AVS80
     {
         "OMX.rk.video_decoder.rv",
@@ -68,11 +69,11 @@ static const omx_core_cb_type dec_core[] = {
     },
 #endif
 
-    {
-        "OMX.rk.video_decoder.vc1",
-        "video_decoder.vc1"
-    },
-
+    /*    {
+            "OMX.rk.video_decoder.vc1",
+            "video_decoder.vc1"
+        },
+    */
     {
         "OMX.rk.video_decoder.wmv3",
         "video_decoder.wmv3"
