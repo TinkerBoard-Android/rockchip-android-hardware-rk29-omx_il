@@ -1297,13 +1297,6 @@ OMX_ERRORTYPE Rkvpu_OMX_GetParameter(
                     portFormat->eColorFormat       = OMX_COLOR_FormatYUV420SemiPlanar;
                     portFormat->xFramerate         = portDefinition->format.video.xFramerate;
                     break;
-                case supportFormat_1:
-                    if (pVideoDec->codecId != OMX_VIDEO_CodingVP8) {
-                        portFormat->eCompressionFormat = OMX_VIDEO_CodingUnused;
-                        portFormat->eColorFormat       = OMX_COLOR_FormatYUV420Planar;
-                        portFormat->xFramerate         = portDefinition->format.video.xFramerate;
-                    }
-                    break;
                 default:
                     if (index > supportFormat_0) {
                         ret = OMX_ErrorNoMore;
